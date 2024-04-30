@@ -16,14 +16,15 @@
         "removePacked": "rimraf -g byteowls-capacitor-oauth2-*.tgz",
         "publishLocally": "npm run removePacked && npm run build && npm pack",
         "prepublishOnly": "npm run build",
-        "postinstall": "cd ./node_modules/@byteowls/capacitor-oauth2 && npm run build"
+        "postinstall": "npm run build"
     },
     "files": [
         "android/src/main/",
         "android/build.gradle",
         "dist/",
         "ios/ByteowlsCapacitorOauth2/Source",
-        "ByteowlsCapacitorOauth2.podspec"
+        "ByteowlsCapacitorOauth2.podspec",
+        "tsconfig.json"
     ],
     "keywords": [
         "capacitor",
